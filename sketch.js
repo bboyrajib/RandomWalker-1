@@ -36,7 +36,7 @@ function draw() {
             if(index>-1){
                 points.splice(index,1);
             }
-            r = random(points);
+            r = points[Math.floor(Math.random()*(points.length-1))];
         }
         else{
             r = points[0];
